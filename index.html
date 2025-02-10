@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>CIA-SovietUnion Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 font-sans">
+<header class="bg-white shadow-sm py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center">
+            <span class="text-xl font-semibold">CIA-SovietUnion</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-bell text-gray-600"></i>
+            <i class="fas fa-cog text-gray-600"></i>
+        </div>
+    </div>
+</header>
+<main class="container mx-auto px-4 py-6">
+    <div class="mb-6">
+        <input class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+               placeholder="Search alerts, threats, or IP addresses..." type="text"/>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
+            <div>
+                <h2 class="text-gray-600">Network Traffic</h2>
+                <p class="text-2xl font-semibold">1,250 pps
+                    <span class="text-green-500 text-sm">↑ 12%</span>
+                </p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
+            <div>
+                <h2 class="text-gray-600">Bandwidth Usage</h2>
+                <p class="text-2xl font-semibold">75 %
+                    <span class="text-red-500 text-sm">↑ 5%</span>
+                </p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
+            <div>
+                <h2 class="text-gray-600">Active Connections</h2>
+                <p class="text-2xl font-semibold">342
+                    <span class="text-green-500 text-sm">↑ 3%</span>
+                </p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
+            <div>
+                <h2 class="text-gray-600">Active Threats</h2>
+                <p class="text-2xl font-semibold">8
+                    <span class="text-red-500 text-sm">↑ 15%</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-xl font-semibold mb-4">Recent Alerts</h2>
+        <div class="bg-white rounded-lg shadow-sm mb-4 p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-semibold">SQL Injection</h3>
+                <p class="text-gray-600">Multiple SQL injection attempts detected from external IP</p>
+                <p class="text-gray-500 text-sm">Source: 192.168.1.100 Destination: 10.0.0.5
+                    <span class="bg-red-100 text-red-500 text-xs font-semibold px-2 py-1 rounded">New</span>
+                </p>
+            </div>
+            <span class="text-gray-500">10:57:01 PM</span>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm mb-4 p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-semibold">Denial of Service</h3>
+                <p class="text-gray-600">Repeated failed login attempts detected</p>
+                <p class="text-gray-500 text-sm">Source: 192.168.1.150 Destination: 10.0.0.10
+                    <span class="bg-yellow-100 text-yellow-500 text-xs font-semibold px-2 py-1 rounded">Investigating</span>
+                </p>
+            </div>
+            <span class="text-gray-500">10:47:01 PM</span>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm mb-4 p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-semibold">Suspicious Traffic</h3>
+                <p class="text-gray-600">Unusual outbound traffic pattern detected</p>
+                <p class="text-gray-500 text-sm">Source: 192.168.1.200 Destination: 10.0.0.15
+                    <span class="bg-green-100 text-green-500 text-xs font-semibold px-2 py-1 rounded">Resolved</span>
+                </p>
+            </div>
+            <span class="text-gray-500">10:32:01 PM</span>
+        </div>
+    </div>
+</main>
+</body>
+</html>
